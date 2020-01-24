@@ -26,7 +26,7 @@ export class TasksService {
 // The idea was to load from Config/tasks.config.ts the amount for the interval.
 // But I didn't manage to make it working.
 //   @Interval(this.updateStatisticsFrequency)
-@Interval(5000)
+@Interval(3600000)
   async handleInterval() {
     // 1. Request games list from external source
     axios.get('http://localhost:8080/api/v1/games')
